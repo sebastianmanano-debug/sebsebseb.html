@@ -1,0 +1,157 @@
+     * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #d9f0ff, #c7c3cc);
+            color: #8a1de4;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 25px auto;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #6f27e2;
+            margin-bottom: 20px;
+        }
+
+        .form-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        input, select {
+            flex: 1;
+            min-width: 130px;
+            padding: 11px 9px;
+            border: 1px solid #9bbbd0;
+            border-radius: 6px;
+            background: #eaf7ff;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input:focus, select:focus {
+            border-color: #8c16ec;
+            box-shadow: 0 0 3px #eeea03;
+        }
+
+        button {
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+        .update-btn {
+            background: #850ae9;
+        }
+
+        .cancel-btn {
+            background: #6e1cccf6;
+        }
+
+        .edit-btn {
+            background: #7f15e2;
+            margin-right: 4px;
+        }
+
+        .delete-btn {
+            background: #771aad;
+        }
+
+        .status {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 12px 0;
+            min-height: 16px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.2);
+            min-width: 580px;
+        }
+
+        thead {
+            background: #8419e9;
+            color: white;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 14px 10px;
+            font-size: 13px;
+            border-bottom: 1px solid #e9eff3;
+        }
+
+        tbody tr:hover {
+            background: rgb(255, 255, 255);
+        }
+
+        .empty {
+            text-align: center;
+            padding: 25px;
+            color: #475569;
+        }
+
+        .storage-info {
+            font-size: 12px;
+            line-height: 1.7;
+            margin-top: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .storage-info strong {
+            color: #0a0902;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .container {
+                margin: 10px auto;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            .form-box input,
+            .form-box select {
+                flex-basis: 100%;
+            }
+
+            .form-box button {
+                flex: 1;
+            }
+        }
+    
