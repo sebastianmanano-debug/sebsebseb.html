@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+
+ <link rel="stylesheet" href="studentmngmnt.css"/>
+    
+ <script src="studentmngmnt.js" defer> </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <form class="form-box" id="studentForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <select id="program" required>
+                <option value="">Select program</option>
+                <option value="BSIS">BSIS</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSCE">BSCE</option>
+                <option value="BSAIS">BSAIS</option>
+                <option value="BSTM">BSTM</option>
+            </select>
+
+            <button type="submit" class="update-btn" id="submitBtn">
+                Add Student
+            </button>
+
+            <button
+                type="button"
+                class="cancel-btn"
+                id="cancelBtn"
+                hidden
+            >
+                Cancel Edit
+            </button>
+        </form>
+
+        <p class="status" id="status">
+            Student list
+        </p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Program</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable"></tbody>
+            </table>
+        </div>
+
+        <div class="storage-info">
+            <p>
+                <strong>Load saved students:</strong>
+                Previously saved student records are automatically
+                retived from the browser's storge
+            </p>
+            <p>
+                <strong>Save students to browser storage:</strong>
+                Automatically keep student records and updates in browser's
+                localStorage.
+            </p>
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>
